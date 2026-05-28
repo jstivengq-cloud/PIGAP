@@ -1,0 +1,10 @@
+.pag2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
