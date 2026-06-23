@@ -109,7 +109,21 @@ header{
         width:100%;
     }
 
+    .services-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+    }
+    .stats{
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+
 h2{
     z-index:3;
 }
@@ -122,8 +136,33 @@ h2{
     justify-content: space-between;
     z-index:1;
     position: relative;
-    background-image: url("img/imagen_stast.png");
+    background-image: url("img/estadisticas.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-color: #f4c400;
 }
 
+ .services{
+        padding: 50px 30px;
+    }
+
+    .services-content p{
+        width: 100%;
+    }
+
+   .services-group {
+    display: flex;             
+    justify-content: center;    
+    gap: 30px;                  
+    flex-wrap: wrap;          
+}
+
+.service {
+    width: 300px;          
+    text-align: center;         
+}
+
+.service img {
+    width: 100%;                
+    border-radius: 10px;        
+}
