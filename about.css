@@ -128,21 +128,42 @@ h2{
     z-index:3;
 }
 .stats{
-    display: flex;
-    margin: 100px; 
-    padding: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-color: #f4c400;
     align-items: center;
-    justify-content: space-between;
-    z-index:1;
     position: relative;
-    background-image: url("img/estadisticas.png");
+    background-image: url("img/mas.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f4c400;
+    width: 102.8%;
+    height: 350px;
+    margin-left: -20px;
+    background-position: 0 -200px;
+    z-index: 2;
 }
 
- .services{
+
+.stat-item{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.stats::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4c400;  
+    opacity: 0.4;        
+    z-index: 1;
+}
+
+.services{
         padding: 50px 30px;
     }
 
@@ -150,7 +171,7 @@ h2{
         width: 100%;
     }
 
-   .services-group {
+.services-group {
     display: flex;             
     justify-content: center;    
     gap: 30px;                  
@@ -165,4 +186,46 @@ h2{
 .service img {
     width: 100%;                
     border-radius: 10px;        
+}
+footer{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:50px;
+}
+
+.columna ul{
+    list-style:none;
+    padding:0;
+    cursor: pointer;
+}
+
+.columna li{
+    margin:8px 0;
+}
+
+.correo{
+    display:flex;
+    margin-top:15px;
+}
+
+.correo input{
+    width:220px;
+    padding:10px;
+    border:none;
+    background:#f4b63f;
+}
+
+.correo button{
+    padding:10px 20px;
+    border:none;
+    background:#29d9e8;
+    color:white;
+    cursor:pointer;
+}
+
+.redes{
+    margin-top:20px;
+    font-size:24px;
 }
